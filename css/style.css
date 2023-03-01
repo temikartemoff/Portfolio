@@ -27,6 +27,10 @@ body {
   margin: 0 auto;
 }
 
+.none{
+  display: none !important;
+}
+
 /*Header*/
 
 .header {
@@ -197,3 +201,25 @@ body {
   color: var(--text-color);
 }
 
+.footer {
+  padding: 60px 0 50px;
+  background: var(--dark-bg);
+  color: var(--header-text);
+  
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 27px;
+}
+.social-list {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.social-list-item {
+}
+.copyright p + p{
+  margin-top:  0.5em;
+}
