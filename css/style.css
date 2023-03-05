@@ -17,6 +17,9 @@
 
 html,
 body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: "DM Sans", sans-serif;
   letter-spacing: -0.5px;
   color: var(--text-color);
@@ -189,6 +192,7 @@ body {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 30px;
   row-gap: 30px;
 
@@ -225,7 +229,12 @@ body {
   text-align: center;
   margin: 0 auto;
 }
+
+.content-list a{
+  color: var(--accent);
+}
 .content-list-item {
+  margin-bottom: 40px;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -233,6 +242,14 @@ body {
 .content-list-item p + p{
   margin-top: 0.5em;
 }
+
+
+/*Contacts*/
+
+.contacts-wrapper{
+  padding: 70px 0;
+}
+
 /* Project Details*/
 
 .project {
@@ -283,6 +300,7 @@ body {
 /*Footer*/
 
 .footer {
+  margin-top: auto;
   padding: 60px 0 50px;
   background: var(--dark-bg);
   color: var(--header-text);
@@ -303,4 +321,73 @@ body {
 }
 .copyright p + p{
   margin-top:  0.5em;
+}
+
+/* Adaptive */
+
+@media (max-width: 768px){
+
+  .welcome{
+    min-height: unset;
+  }
+
+  .welcome-title{
+    font-size: 30px;
+  }
+
+  .welcome-title strong{
+    font-size: 40px;
+  }
+
+  .projects {
+    padding: 40px 0;
+  }
+
+  .title-1{
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+
+  .title-2{
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .projects-list-title{
+    font-size: 22px;
+  }
+
+  .project-details-desc{
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .skills-wrapper{
+    padding: 40px 0;
+  }
+
+  .content-list-item{
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .contacts-wrapper{
+    padding: 40px 0;
+  }
+
+  .footer{
+    padding: 40px 0 30px;
+  }
+
+  .social-list{
+    column-gap: 20px;
+  }
+
+  .social-list-item{
+    width: 28px;
+  }
+
+  .footer-wrapper{
+    row-gap: 20px;
+  }
 }
